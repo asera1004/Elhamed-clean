@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الحمد كلين لخدمات التنظيف</title>
+<style>
+:root{--bg:#f4fafb;--card:#fff;--tx:#12262b;--mu:#557077;--pr:#0a8f9c;--p2:#0a6c75;--on:#fff;--bd:#d3e5e8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a1c;--card:#14262a;--tx:#e8f4f5;--mu:#9db8bc;--pr:#2bc0cd;--p2:#1c8e99;--on:#062327;--bd:#25444a}}
+:root[data-theme="dark"]{--bg:#0d1a1c;--card:#14262a;--tx:#e8f4f5;--mu:#9db8bc;--pr:#2bc0cd;--p2:#1c8e99;--on:#062327;--bd:#25444a}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 'Segoe UI',Tahoma,Arial,sans-serif}
+.w{max-width:900px;margin:auto;padding:0 16px}
+header{background:linear-gradient(160deg,var(--pr),var(--p2));color:var(--on);padding:52px 0 40px;text-align:center;border-radius:0 0 28px 28px}
+h1{margin:0 0 6px;font-size:38px}header p{margin:0 0 20px;opacity:.92}
+.b{display:inline-block;padding:10px 20px;margin:4px;border-radius:24px;border:0;font:inherit;font-weight:700;text-decoration:none;cursor:pointer;background:var(--on);color:var(--pr)}
+.b.s{background:var(--pr);color:var(--on)}
+section{padding:26px 0}h2{margin:0 0 14px;font-size:22px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.c b{display:block;margin-bottom:4px}.c span{color:var(--mu);font-size:15px}
+.ph{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.ph img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;display:block}
+footer{background:var(--card);border-top:1px solid var(--bd);padding:22px 0;text-align:center;color:var(--mu)}
+#eb{position:fixed;bottom:calc(14px + env(safe-area-inset-bottom,0px));left:14px;z-index:5}
+#ed{background:var(--card);border-bottom:2px solid var(--pr);padding:14px 0}
+#ed label{display:block;margin:10px 0 3px;font-weight:700;font-size:14px}
+#ed input,#ed textarea{width:100%;padding:9px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit}
+.th{position:relative}.th button{position:absolute;top:4px;left:4px;border:0;border-radius:50%;width:26px;height:26px;background:#d33;color:#fff;cursor:pointer}
+#m{margin:8px 0;color:var(--pr);font-weight:700}
+.ch{margin-top:8px}.ch span{display:inline-block;margin:4px;padding:4px 12px;border-radius:16px;background:rgba(255,255,255,.18);font-size:14px}.c b::before{content:"✨ "}.fl{color:var(--pr);text-decoration:none;font-weight:700}.bar{position:fixed;bottom:0;left:0;right:0;display:flex;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--bd);z-index:4}.bar .b{flex:1;text-align:center;margin:0}body{padding-bottom:72px}#eb{bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+.ad{display:inline-block;margin-top:8px;font-size:13px;color:var(--mu);text-decoration:underline;cursor:pointer}
+</style></head><body>
+<div id="app"></div><div id="edit"></div>
+<script id="data" type="application/json">{"name":"الحمد كلين","tag":"نظافة تشوفها وترتاح لها — خدمات تنظيف للمنازل والشركات","phone":"0574694100","wa":"966574694100","addr":"المدينة المنورة","about":"شركة الحمد كلين متخصصة في خدمات التنظيف الاحترافية بفريق مدرّب ومعدات حديثة ومواد آمنة. هدفنا نسلّمك مكان نظيف ومُعطّر بأسعار مناسبة وفي المواعيد المحددة.","services":[["تنظيف الشقق والمنازل","تنظيف شامل للأرضيات والأسطح والنوافذ"],["تنظيف الفلل","تنظيف عميق للفلل والحدائق والمداخل"],["غسيل خزانات","تنظيف وتعقيم خزانات المياه الأرضية والعلوية"],["تنظيف المكاتب والشركات","عقود شهرية أو مرة واحدة"],["المطابخ والحمامات","إزالة الدهون والجير والبقع العنيدة"],["غسيل السجاد والكنب","غسيل وتعقيم بأحدث الأجهزة"],["تنظيف الزجاج والواجهات","لمعان وشفافية بدون خطوط"]],"photos":[]}</script>
+<script>
+let D=JSON.parse(document.getElementById('data').textContent);
+const $=s=>document.querySelector(s);
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+function render(){
+  const I=D.phone.replace(/\D/g,'').replace(/^(966)?0?/,'966');
+  const a=$('#app');a.replaceChildren();
+  const hd=el('header'),w=el('div','w');
+  w.append(el('h1','',D.name),el('p','',D.tag));
+  const lk=(x,h,c)=>{const e=el('a',c,x);e.href=h;e.target='_blank';e.rel='noopener';return e};
+  w.append(lk('📞 اتصل الآن','tel:+'+I,'b'),lk('💬 واتساب','https://wa.me/'+I,'b'));
+  const ch=el('div','ch');['✔ فريق مدرّب','✔ مواد آمنة','✔ التزام بالمواعيد'].forEach(x=>ch.append(el('span','',x)));w.append(ch);
+  hd.append(w);a.append(hd);
+  const m=el('div','w');
+  let s=el('section');s.append(el('h2','','خدماتنا'));
+  const g=el('div','g');D.services.forEach(x=>{const c=el('div','c');c.append(el('b','',x[0]),el('span','',x[1]||''));g.append(c)});
+  s.append(g);m.append(s);
+  if(D.photos.length){s=el('section');s.append(el('h2','','صور من أعمالنا'));const p=el('div','ph');
+    D.photos.forEach(u=>{const i=el('img');i.src=u;i.alt='من أعمال '+D.name;i.loading='lazy';p.append(i)});s.append(p);m.append(s)}
+  s=el('section');s.append(el('h2','','من نحن'),el('p','',D.about));m.append(s);
+  a.append(m);
+  const f=el('footer'),fw=el('div','w');
+  fw.append(el('div','','📍 '+D.addr),lk('📞 '+D.phone,'tel:+'+I,'fl'),el('div','','© '+D.name));f.append(fw);a.append(f);
+  const bar=el('div','bar');bar.append(lk('📞 اتصل','tel:+'+I,'b s'),lk('💬 واتساب','https://wa.me/'+I,'b s'));a.append(bar);
+}
+render();
+function img(file){return new Promise((ok,no)=>{const r=new FileReader();r.onerror=no;r.onload=()=>{const i=new Image();i.onerror=no;i.onload=()=>{
+  const k=Math.min(1,900/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*k;c.height=i.height*k;
+  c.getContext('2d').drawImage(i,0,0,c.width,c.height);ok(c.toDataURL('image/jpeg',.75))};i.src=r.result};r.readAsDataURL(file)})}
+function editor(){
+  const e=$('#edit');e.replaceChildren();
+  const box=el('div');box.id='ed';const w=el('div','w');box.append(w);
+  const F={};
+  [['name','اسم الشركة'],['tag','الشعار / الوصف المختصر'],['phone','رقم الجوال (سعودي، مثل 05xxxxxxxx)'],['addr','العنوان']].forEach(([k,l])=>{
+    w.append(el('label','',l));const i=el('input');i.value=D[k];F[k]=i;w.append(i)});
+  w.append(el('label','','من نحن'));const ab=el('textarea');ab.rows=4;ab.value=D.about;w.append(ab);
+  w.append(el('label','','الخدمات (كل خدمة في سطر: العنوان | الوصف)'));
+  const sv=el('textarea');sv.rows=7;sv.value=D.services.map(x=>x[0]+' | '+(x[1]||'')).join('\n');w.append(sv);
+  w.append(el('label','','الصور'));
+  const ph=el('div','ph');
+  const draw=()=>{ph.replaceChildren();D.photos.forEach((u,n)=>{const d=el('div','th'),i=el('img');i.src=u;const x=el('button','','×');
+    x.onclick=()=>{D.photos.splice(n,1);draw()};d.append(i,x);ph.append(d)})};draw();w.append(ph);
+  const up=el('input');up.type='file';up.accept='image/*';up.multiple=true;
+  up.onchange=async()=>{msg('جاري تجهيز الصور...');for(const f of up.files){try{D.photos.push(await img(f))}catch(_){}}draw();msg('')};w.append(up);
+  const m=el('div');m.id='m';w.append(m);
+  const sb=el('button','b s','💾 حفظ ونشر');
+  sb.onclick=async()=>{
+    for(const k in F)D[k]=F[k].value.trim();D.about=ab.value.trim();
+    D.services=sv.value.split('\n').map(l=>l.trim()).filter(Boolean).map(l=>{const p=l.split('|');return[p[0].trim(),(p[1]||'').trim()]});
+    msg('جاري الحفظ...');
+    try{const A=await claude.use('artifact');if(!A){msg('الحفظ غير متاح');return}
+      const c=document.documentElement.cloneNode(true);
+      c.querySelector('#app').replaceChildren();c.querySelector('#edit').replaceChildren();
+      c.querySelector('#data').textContent=JSON.stringify(D).replace(/</g,'\\u003c');
+      await A.publish('<!doctype html>\n'+c.outerHTML)}catch(er){msg('تعذّر الحفظ: '+(er&&er.code||''))}};
+  const cb=el('button','b s','إغلاق');cb.onclick=()=>e.replaceChildren();
+  w.append(sb,cb);e.append(box);
+}
+function msg(t){const m=$('#m');if(m)m.textContent=t}
+function btn(e){const b=el('button','b s','✏️ تعديل الموقع');b.id='eb';b.onclick=editor;e.append(b)}
+let sw=0,st=0,ty=0,lt=0;
+const atB=()=>innerHeight+scrollY>=document.documentElement.scrollHeight-4;
+const bump=()=>{const n=Date.now();if(n-lt<400)return;lt=n;if(n-st>6000)sw=0;st=n;if(++sw>=3){sw=0;gate()}};
+addEventListener('touchstart',e=>{ty=e.touches[0].clientY},{passive:true});
+addEventListener('touchend',e=>{if(atB()&&ty-e.changedTouches[0].clientY>40)bump()},{passive:true});
+addEventListener('wheel',e=>{if(atB()&&e.deltaY>0)bump()},{passive:true});
+const H='137d8a6fced1dbafc74fef227f6961c09b46c960b4eab00c73cb08f1b698aa3a';
+async function sha(t){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(t));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+function gate(){
+  const e=$('#edit');e.replaceChildren();
+  const box=el('div');box.id='ed';const w=el('div','w');box.append(w);
+  w.append(el('label','','كلمة سر المدير'));
+  const i=el('input');i.type='password';w.append(i);
+  const m=el('div');m.id='m';w.append(m);
+  const ok=el('button','b s','دخول');
+  ok.onclick=async()=>{
+    let h='';try{h=await sha(i.value)}catch(_){}
+    if(h!==H){msg('كلمة السر غير صحيحة');return}
+    let U=null;try{U=await claude.use('user')}catch(_){}
+    if(U&&U.canEdit&&U.canEdit())editor();else msg('لازم تكوني داخلة بحساب Claude الخاص بالمدير عشان تحفظي التعديلات');
+  };
+  const cb=el('button','b s','إغلاق');cb.onclick=()=>e.replaceChildren();
+  w.append(ok,cb);e.append(box);box.scrollIntoView();i.focus();
+}
+</script></body></html>
